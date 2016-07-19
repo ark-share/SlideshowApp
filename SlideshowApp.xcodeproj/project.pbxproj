@@ -12,6 +12,10 @@
 		A3318BFE1D38EB6D00BF2B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3318BFC1D38EB6D00BF2B28 /* Main.storyboard */; };
 		A3318C001D38EB6D00BF2B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3318BFF1D38EB6D00BF2B28 /* Assets.xcassets */; };
 		A3318C031D38EB6D00BF2B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3318C011D38EB6D00BF2B28 /* LaunchScreen.storyboard */; };
+		A3318C0B1D38EBD300BF2B28 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3318C0A1D38EBD300BF2B28 /* DetailViewController.swift */; };
+		A351BF0D1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A351BF0A1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg */; };
+		A351BF171D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A351BF161D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg */; };
+		A351BF181D3DD27A00A2ED58 /* patents-796x473.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A351BF091D3DCE6A00A2ED58 /* patents-796x473.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		A3318BFF1D38EB6D00BF2B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3318C021D38EB6D00BF2B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3318C041D38EB6D00BF2B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3318C0A1D38EBD300BF2B28 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A351BF091D3DCE6A00A2ED58 /* patents-796x473.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "patents-796x473.jpg"; sourceTree = "<group>"; };
+		A351BF0A1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg"; sourceTree = "<group>"; };
+		A351BF161D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "valve-gambling-websites-796x448.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,13 @@
 				A3318BF81D38EB6D00BF2B28 /* AppDelegate.swift */,
 				A3318BFA1D38EB6D00BF2B28 /* ViewController.swift */,
 				A3318BFC1D38EB6D00BF2B28 /* Main.storyboard */,
+				A3318C0A1D38EBD300BF2B28 /* DetailViewController.swift */,
 				A3318BFF1D38EB6D00BF2B28 /* Assets.xcassets */,
 				A3318C011D38EB6D00BF2B28 /* LaunchScreen.storyboard */,
 				A3318C041D38EB6D00BF2B28 /* Info.plist */,
+				A351BF091D3DCE6A00A2ED58 /* patents-796x473.jpg */,
+				A351BF161D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg */,
+				A351BF0A1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -124,6 +136,9 @@
 			files = (
 				A3318C031D38EB6D00BF2B28 /* LaunchScreen.storyboard in Resources */,
 				A3318C001D38EB6D00BF2B28 /* Assets.xcassets in Resources */,
+				A351BF0D1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg in Resources */,
+				A351BF171D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg in Resources */,
+				A351BF181D3DD27A00A2ED58 /* patents-796x473.jpg in Resources */,
 				A3318BFE1D38EB6D00BF2B28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3318C0B1D38EBD300BF2B28 /* DetailViewController.swift in Sources */,
 				A3318BFB1D38EB6D00BF2B28 /* ViewController.swift in Sources */,
 				A3318BF91D38EB6D00BF2B28 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +302,7 @@
 				A3318C091D38EB6D00BF2B28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
