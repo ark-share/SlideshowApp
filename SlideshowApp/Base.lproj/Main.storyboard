@@ -19,54 +19,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM1-uk-NaC">
-                                <rect key="frame" x="195" y="285" width="30" height="30"/>
+                                <rect key="frame" x="225" y="315" width="30" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iao-Vd-hFL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-SM-TcL">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="backward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGQ-4h-ksP"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDH-pT-CBL">
-                                <rect key="frame" x="375" y="285" width="30" height="30"/>
+                                <rect key="frame" x="345" y="315" width="30" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ilh-eg-VSz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-NW-Xcx">
-                                <rect key="frame" x="30" y="40" width="540" height="225"/>
+                                <rect key="frame" x="10" y="30" width="580" height="225"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="225" id="btN-yl-UKz"/>
+                                    <constraint firstAttribute="height" constant="225" id="yAZ-NA-gbm"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-SM-TcL">
+                                <rect key="frame" x="285" y="315" width="30" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGQ-4h-ksP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zDH-pT-CBL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Lc-Ux-vPJ"/>
-                            <constraint firstItem="FM1-uk-NaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dpu-PH-ryB"/>
-                            <constraint firstItem="Ogh-SM-TcL" firstAttribute="leading" secondItem="FM1-uk-NaC" secondAttribute="trailing" constant="60" id="Ejf-hC-U9w"/>
-                            <constraint firstItem="xGM-NW-Xcx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Ip0-xQ-k13"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xGM-NW-Xcx" secondAttribute="trailing" constant="10" id="LYN-n3-hGe"/>
-                            <constraint firstItem="FM1-uk-NaC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ouj-XA-J7R"/>
-                            <constraint firstItem="Ogh-SM-TcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U27-U7-y90"/>
-                            <constraint firstItem="zDH-pT-CBL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WSD-jD-kG6"/>
-                            <constraint firstItem="zDH-pT-CBL" firstAttribute="leading" secondItem="Ogh-SM-TcL" secondAttribute="trailing" constant="60" id="drv-aN-QOd"/>
-                            <constraint firstItem="zDH-pT-CBL" firstAttribute="top" secondItem="xGM-NW-Xcx" secondAttribute="bottom" constant="20" id="eYD-06-0wJ"/>
-                            <constraint firstItem="xGM-NW-Xcx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="jyP-l4-0le"/>
-                            <constraint firstItem="Ogh-SM-TcL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mE8-Sl-v7S"/>
+                            <constraint firstItem="xGM-NW-Xcx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Dye-os-rvE"/>
+                            <constraint firstItem="zDH-pT-CBL" firstAttribute="top" secondItem="xGM-NW-Xcx" secondAttribute="bottom" constant="60" id="Jnx-1O-0f1"/>
+                            <constraint firstItem="zDH-pT-CBL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="OOG-Ji-Ksk"/>
+                            <constraint firstItem="xGM-NW-Xcx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="eKH-I5-DOE"/>
+                            <constraint firstItem="Ogh-SM-TcL" firstAttribute="top" secondItem="xGM-NW-Xcx" secondAttribute="bottom" constant="60" id="rkE-du-zA9"/>
+                            <constraint firstItem="FM1-uk-NaC" firstAttribute="top" secondItem="xGM-NW-Xcx" secondAttribute="bottom" constant="60" id="scV-pm-adC"/>
+                            <constraint firstItem="FM1-uk-NaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="wa4-Z4-vQQ"/>
+                            <constraint firstItem="Ogh-SM-TcL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x4w-fq-3fs"/>
+                            <constraint firstAttribute="trailing" secondItem="xGM-NW-Xcx" secondAttribute="trailing" constant="10" id="zxW-XY-8iH"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Dpu-PH-ryB"/>
-                                <exclude reference="2Lc-Ux-vPJ"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="backward" destination="Ogh-SM-TcL" id="mUR-f4-bD5"/>
@@ -99,8 +90,8 @@
                                     <segue destination="Dwe-nH-dT4" kind="unwind" unwindAction="unwind:" id="8nb-f6-VCh"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWC-rc-Zep">
-                                <rect key="frame" x="0.0" y="20" width="600" height="450"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qWC-rc-Zep">
+                                <rect key="frame" x="0.0" y="20" width="600" height="440"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="0Z5-we-R9R"/>
                                 </constraints>
@@ -130,6 +121,7 @@
                                 <exclude reference="C4s-As-F8P"/>
                                 <exclude reference="QXO-s3-0am"/>
                                 <exclude reference="siD-8u-asv"/>
+                                <exclude reference="04C-uD-zyz"/>
                                 <exclude reference="FCw-Ew-S1T"/>
                             </mask>
                         </variation>
