@@ -52,10 +52,10 @@ class ViewController: UIViewController {
     }
     
     var timer: NSTimer = NSTimer()
-    func startTimer() {
+    private func startTimer() {
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.forward(_:)), userInfo: nil, repeats: true)
     }
-    func stopTimer() {
+    private func stopTimer() {
         timer.invalidate()
     }
     
@@ -71,9 +71,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         flashImageView()
+        
+        self.imageView.userInteractionEnabled = true
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(ViewController.imageTap))
+        self.imageView.addGestureRecognizer(tapGesture)
+        
+    }
+    func imageTap() {
+        print("imageTap")
+        performSegueWithIdentifier("toDetail", sender: nil)
     }
     
-    func flashImageView() {
+    private func flashImageView() {
         let currentImage = UIImage(named: images[id]!)
         imageView.image = currentImage
         
@@ -87,6 +96,13 @@ class ViewController: UIViewController {
 
     @IBAction func unwind(segue: UIStoryboardSegue) {
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toDetail") {
+            let detailView: DetailViewController = (segue.destinationViewController as? DetailViewController)!
+            detailView.selectedImage = imageView.image
+        }
     }
 
 }

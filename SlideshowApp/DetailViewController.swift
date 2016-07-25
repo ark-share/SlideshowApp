@@ -12,10 +12,13 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    var selectedImage: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imageView.image = selectedImage
     }
 
     override func didReceiveMemoryWarning() {
