@@ -36,26 +36,28 @@ class ViewController: UIViewController {
         if isPlay == true {
             isPlay = false
             stopTimer()
-        
-            defaultButton(forward)
-            defaultButton(backward)
-            play.setTitle("再生", forState: .Normal)
         }
         else {
             isPlay = true
             startTimer()
-            
-            stoppedButton(forward)
-            stoppedButton(backward)
-            play.setTitle("停止", forState: .Normal)
         }
     }
     
     var timer: NSTimer = NSTimer()
     private func startTimer() {
+        
+        stoppedButton(forward)
+        stoppedButton(backward)
+        play.setTitle("停止", forState: .Normal)
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.forward(_:)), userInfo: nil, repeats: true)
     }
     private func stopTimer() {
+
+        defaultButton(forward)
+        defaultButton(backward)
+        play.setTitle("再生", forState: .Normal)
+
         timer.invalidate()
     }
     
@@ -102,6 +104,8 @@ class ViewController: UIViewController {
         if(segue.identifier == "toDetail") {
             let detailView: DetailViewController = (segue.destinationViewController as? DetailViewController)!
             detailView.selectedImage = imageView.image
+            
+            stopTimer()
         }
     }
 
