@@ -69,11 +69,19 @@
 				A3318BFF1D38EB6D00BF2B28 /* Assets.xcassets */,
 				A3318C011D38EB6D00BF2B28 /* LaunchScreen.storyboard */,
 				A3318C041D38EB6D00BF2B28 /* Info.plist */,
+				A3BC0FA81D46F1E40040FEA4 /* img */,
+			);
+			path = SlideshowApp;
+			sourceTree = "<group>";
+		};
+		A3BC0FA81D46F1E40040FEA4 /* img */ = {
+			isa = PBXGroup;
+			children = (
 				A351BF091D3DCE6A00A2ED58 /* patents-796x473.jpg */,
 				A351BF161D3DD12C00A2ED58 /* valve-gambling-websites-796x448.jpg */,
 				A351BF0A1D3DCE6A00A2ED58 /* TNW-Digital-SLR-Photography-for-Dummies-796x398.jpg */,
 			);
-			path = SlideshowApp;
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
